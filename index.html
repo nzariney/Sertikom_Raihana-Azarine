@@ -15,7 +15,8 @@
     <!-- font awesome -->
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-
+<!-- aos -->
+ <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
     <!-- navbar -->
@@ -36,15 +37,12 @@
         
          <li class="nav-item">
           <a class="nav-link mx-1" href="#tentang kami">Tentang Kami</a>
-        </li>
+         </li>
 
         <li class="nav-item">
-          <a class="nav-link" href="#project">Hubungi Kami</a>
+          <a class="nav-link" href="#call">Hubungi Kami</a>
         </li>
-
-        <li class="nav-item">
-          <a class="nav-link" href="#FAQ">FAQ</a>
-        </li>
+        
       </ul>
 
     <div class="text-light fs-4">
@@ -58,20 +56,21 @@
    <!-- navbar -->
     <!-- hero -->
         <div class="hero d-flex align-items-center">
+         <div data-aos="fade-up">
             <div class="container">
-                <div class="row row-cols-lg-2 row-cols-1 d-flex align-items-center mt-5">
-                    <div class="col  text-light flex-row">
-                        <h1><b>Transformasi Digital dimulai dari VisiDigital.</b></h1>
-                        <p class="my-4">“Membantu bisnis Anda tumbuh dengan layanan digital yang terstruktur, inovatif, dan dapat diandalkan”    </p>
-                            
-                        <button type="button" class="btn btn-primary btn-lg">Daftar Sekarang</button>
-                        <a href="" class="btn-secondary glightbox"></a>
-                    </div>
-                    
+                  <div class="row row-cols-lg-2 row-cols-1 d-flex align-items-center mt-5">
+                      <div class="col  text-light flex-row">
+                          <h1><b>Transformasi Digital dimulai dari VisiDigital.</b></h1>
+                          <p class="my-4">“Membantu bisnis Anda tumbuh dengan layanan digital yang terstruktur, inovatif, dan dapat diandalkan”    </p>
+                              
+                          <button type="button" class="btn btn-primary btn-lg">Daftar Sekarang</button>
+                          <a href="" class="btn-secondary glightbox"></a>
+                      </div>
+                      
+                  </div>
                 </div>
-            </div>
+          </div> 
         </div>
-
 <!-- hero -->
 
 <!-- layanan kami -->
@@ -87,13 +86,13 @@
         <!-- layanan 1 -->
         <div class="col-12 col-md-6 col-lg-4 ">
           <div class="card pkg-card h-100">
-            <div class="card-body  ">
+            <div class="card-body d-flex flex-column justify-content-between">
               <div class=" justify-content-between align-items-start mb-3">
                 <h4 class="text-light">1. Pengembangan Website</h4>
                 <div class="teks">
                 <p class="text-light mt-4">Kami menyediakan layanan pembuatan website profesional, responsif, dan cepat. Mulai dari landing page, company profile, hingga sistem web custom yang dirancang sesuai kebutuhan bisnis Anda.</p>
                 </div>
-                <button class="btn btn-outline-primary btn-sm mt-2" id="card">Paket 1</button>
+                <button class="btn btn-outline-primary btn-sm mt-2 paket-btn">Paket 1</button>
               </div>
             </div>
           </div>
@@ -102,13 +101,13 @@
         <!-- layanan 2 -->
         <div class="col-12 col-md-6 col-lg-4">
           <div class="card pkg-card h-100 ">
-            <div class="card-body flex-column">
+            <div class="card-body  d-flex flex-column justify-content-between">
               <div class=" justify-content-between align-items-start mb-3">
                 <h4 class="text-light">2. Desain Branding & Visual</h4>
                 <div class="teks">
                   <p class="text-light m-4">VisiDigital membantu membangun identitas visual yang kuat melalui pembuatan logo, desain branding kit, UI/UX, dan materi grafis profesional yang memperkuat citra perusahaan Anda.</p>
                 </div>
-                <button class="btn btn-outline-primary btn-sm mt-2" id="card">Paket 2</button>
+                <button class="btn btn-outline-primary btn-sm mt-2 paket-btn">Paket 2</button>
               </div>
             </div>
           </div>
@@ -117,13 +116,13 @@
         <!-- layanan 3 -->
         <div class="col-12 col-md-6 col-lg-4">
           <div class="card pkg-card h-100">
-            <div class="card-body  ">
+            <div class="card-body  d-flex flex-column justify-content-between">
               <div class=" justify-content-between align-items-start mb-3">
                <h4 class="text-light">3. Digital Marketing & Optimasi</h4>
                <div class="teks">
                 <p class="text-light m-4">Kami menawarkan layanan digital marketing seperti manajemen media sosial, iklan digital, SEO, dan strategi pemasaran online untuk meningkatkan jangkauan sekaligus performa bisnis Anda.</p>
                </div>
-                <button class="btn btn-outline-primary btn-sm mt-2" id="card">Paket 3</button>
+                <button class="btn btn-outline-primary btn-sm mt-2 paket-btn">Paket 3</button>
               </div>
             </div>
           </div>
@@ -132,13 +131,13 @@
         <!-- layanan 4 -->
         <div class="col-12 col-md-6 col-lg-4">
           <div class="card pkg-card h-100 ">
-            <div class="card-body d-flex flex-column">
+            <div class="card-body d-flex flex-column justify-content-between">
               <div class="justify-content-between align-items-start mb-3">
                <h4 class="text-light">4. Pengembangan Aplikasi</h4>
                <div class="teks">
                 <p class="text-light m-4">Layanan pengembangan aplikasi mobile dan desktop berbasis teknologi terbaru. Cocok untuk bisnis yang ingin meningkatkan efisiensi, pengalaman pengguna, dan otomatisasi.</p>
                </div>
-                <button class="btn btn-outline-primary btn-sm mt-2" id="card">Paket 4</button>
+                <button class="btn btn-outline-primary btn-sm mt-2 paket-btn">Paket 4</button>
               </div>
             </div>
           </div>
@@ -147,37 +146,62 @@
         <!-- layanan 5 -->
         <div class="col-12 col-md-6 col-lg-4">
           <div class="card pkg-card h-100">
-            <div class="card-body d-flex flex-column">
+            <div class="card-body  d-flex flex-column justify-content-between">
               <div class="justify-content-between align-items-start mb-3">
                 <h4 class="text-light">5. Konsultasi & Strategi Digital</h4>
                 <div class="teks">
                   <p class="text-light m-4">VisiDigital menyediakan konsultasi profesional untuk membantu Anda menentukan strategi digital terbaik, mencakup analisis kebutuhan, perencanaan sistem, hingga roadmap digital bisnis.</p>
                 </div>
-                <button class="btn btn-outline-primary btn-sm mt-2" id="card">Paket 5</button>
+                <button class="btn btn-outline-primary btn-sm mt-2 paket-btn">Paket 5</button>
               </div>
             </div>
           </div>
         </div>
-
+ 
+        <!-- layanan 6 -->
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="card pkg-card h-100">
+            <div class="card-body  d-flex flex-column justify-content-between">
+              <div class="justify-content-between align-items-start mb-3">
+                <h4 class="text-light">6. Manajemen Sosial Media</h4>
+                <div class="teks">
+                  <p class="text-light m-4">VisiDigital membantu bisnis Anda membangun kehadiran online melalui pengelolaan sosial media yang profesional. Mulai dari perencanaan konten, desain visual, copywriting, hingga analisis perform untuk meningkatkan engagement dan brand awareness. </p>
+                </div>
+                <button class="btn btn-outline-primary btn-sm mt-2 paket-btn">Paket 6</button>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </section>
 <!-- layanan kami -->
+
 <!-- tentang kami -->
-<div class="judul_ttng">
+<div class="judul_ttng" >
         <div class="row">
-          <div class="col my-5 text-center" id="tentang kami">
-             <h2>Tentang Kami</h2>
+          <div class="col mt-5 text-center text-light" id="tentang kami">
+             <h2><b>Tentang Kami</h2></b>
           </div>
         </div>
        </div>
       <div class="TTng">
-        <div class="row">
-          <div class="col">
-            <img src="" alt="">
+        <div class="row py-5 px-5">
+          <div class="col mt-6">
+            <img src="asset/img/tentangkami.png" alt="" width="550px"  >
           </div>
-          <div class="col ">
-            <h6> <i class="fa-solid fa-arrow-right"></i>VisiDigital adalah perusahaan IT Solution yang menyediakan layanan teknologi modern untuk membantu bisnis bertransformasi secara digital. Kami menghadirkan solusi yang cepat, aman, dan efisien melalui pengembangan software, integrasi sistem, desain antarmuka, dan layanan digital lainnya. Dengan pendekatan inovatif dan tim profesional, VisiDigital berkomitmen membangun fondasi digital yang kuat agar bisnis Anda mampu berkembang dan bersaing di era teknologi saat ini.</h6>
+          <div class="col text-light">
+            <h6> <i class="fa-solid fa-arrow-right"></i> VisiDigital adalah perusahaan IT Solution yang menyediakan layanan teknologi modern untuk membantu bisnis bertransformasi secara digital. Kami menghadirkan solusi yang cepat, aman, dan efisien melalui pengembangan software, integrasi sistem, desain antarmuka, dan layanan digital lainnya. Dengan pendekatan inovatif dan tim profesional, VisiDigital berkomitmen membangun fondasi digital yang kuat agar bisnis Anda mampu berkembang dan bersaing di era teknologi saat ini.</h6>
+
+            <ul class="services">
+              <li>Pengembangan Software (Custom)</li>
+              <li>Integrasi Sistem & API</li>
+              <li>Desain Antarmuka & UX</li>
+              <li>Cloud & Infrastruktur</li>
+              <li>Keamanan & Audit</li>
+              <li>Maintenance & Support</li>
+            </ul>
+          
           </div>
         </div>
       
@@ -185,5 +209,182 @@
 </div>
 <!-- tentang kami -->
 
+<!-- Teruji Oleh -->
+<div class="client"> 
+  <section id="p" class="py-3" >
+    <div class="container" id="client">
+      <div class="section-title">
+        <h2>Teruji Oleh</h2>
+        <p>Digunakan dan Dipercaya Oleh Beberapa Perusahaan</p>
+      </div>
+   <div class="row d-flex">   
+     <div class="col lg-3 md-6">
+        <div class="card d-flex logo" >
+        <img src="asset/img/industri1.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+        <p class="card-text text-light">VisiDigital membantu kami menyusun strategi digital yang terarah. Hasilnya, proses bisnis kami menjadi lebih efisien.</p>
+        </div>
+     </div> 
+     </div>
+     <div class="col lg-3 md-6">
+        <div class="card d-flex logo">
+        <img src="asset/img/industri2.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+        <p class="card-text text-light">Strategi digital marketing dari VisiDigital membuat jangkauan online kami meningkat pesat dan penjualan ikut naik.</p>
+     </div>
+     </div>
+     </div>
+     <div class="col">
+        <div class="card d-flex logo">
+        <img src="asset/img/industri5.jpeg" class="card-img-top" alt="...">
+        <div class="card-body">
+        <p class="card-text text-light">Website bisnis kami dibuat modern, cepat, dan sangat rapi. Proses komunikasi dengan tim VisiDigital juga lancar.</p>
+        </div>
+     </div> 
+     </div>
+     <div class="col">
+        <div class="card d-flex logo">
+        <img src="asset/img/industri6.jpeg" class="card-img-top" alt="...">
+        <div class="card-body">
+        <p class="card-text text-light">Aplikasi operasional yang dibuat VisiDigital sangat membantu proses kerja kami. Cepat, dan mudah digunakan.</p>
+        </div>
+     </div> 
+     </div>
+    </div>
+  </div>
+</div> 
+       
+<!-- Teruji Oleh --> 
+
+<!-- Form -->
+ <div class="form" id="call">
+        <div class="container">
+          <div class="isi_form">
+            <div class="row">
+              <div class="col">
+                <h2 class="text-light mt-5"><b>Konsultasi Secara Gratis</b></h2>
+                <p class="text-secondary mb-2">Kirimlah Pesan Lewat Form ini</p>
+              </div>
+            </div>
+
+            
+            <div class="row ">
+              <!-- GAMBAR -->
+              <div class="col-md-6 mb-4 mb-md-0 text-centerb">
+                  <img src="asset/img/solutions.jpg"
+                       class="img-fluid rounded"
+                       style="max-width: 100%; height: 100%; ">
+              </div> 
+              <div class="col-sm-6 justify-content-center align-items-center ">
+                <form id="contactForm" class="p-4 rounded"
+                      style="background:#101c2d; border:1px solid #0e1625;">
+
+                    <!-- NAMA -->
+                    <div class="mb-3">
+                        <label class="form-label text-light ">Nama Lengkap</label>
+                        <input type="text" id="nama" class="form-control"
+                               style="background:#0d1523; border:1px solid #1b2a41; color:white;">
+                        <small class="text-danger d-none" id="err-nama">Nama tidak boleh kosong</small>
+                    </div>
+
+                    <!-- EMAIL -->
+                    <div class="mb-3">
+                        <label class="form-label text-light">Email</label>
+                        <input type="text" id="email" class="form-control"
+                               style="background:#0d1523; border:1px solid #1b2a41; color:white;">
+                        <small class="text-danger d-none" id="err-email">Email tidak boleh kosong</small>
+                    </div>
+
+                    <!-- PESAN -->
+                    <div class="mb-3">
+                        <label class="form-label text-light">Pesan</label>
+                        <textarea id="pesan" class="form-control" rows="4"
+                                  style="background:#0d1523; border:1px solid #1b2a41; color:white;"></textarea>
+                        <small class="text-danger d-none" id="err-pesan">Pesan tidak boleh kosong</small>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary w-100">Kirim Pesan</button>
+
+                </form>
+              </div>
+              <div class="col-sm-6">
+                
+              </div>
+            </div>
+            </div>
+          </div>
+        </div>
+
+        <footer class="bg-footer text-light pt-5 pb-3">
+  <div class="container">
+    <div class="row">
+
+      <div class="col-md-3 mb-4">
+        <h5 class="fw-bold">VisiDigital</h5>
+        <p class="small">Solusi teknologi modern untuk kebutuhan digital Anda.</p>
+      </div>
+
+      <div class="col-md-3 mb-4">
+        <h5 class="fw-bold">Layanan</h5>
+        <ul class="list-unstyled small">
+          <li><a href="#" class="footer-link">Web Development</a></li>
+          <li><a href="#" class="footer-link">UI/UX Desain</a></li>
+          <li><a href="#" class="footer-link">Keamanan Sistem & Data</a></li>
+          <li><a href="#" class="footer-link">IT Support & Maintenance</a></li>
+        </ul>
+      </div>
+
+      <div class="col-md-3 mb-4">
+        <h5 class="fw-bold">Perusahaan</h5>
+        <ul class="list-unstyled small">
+          <li><a href="#" class="footer-link">Tentang Kami</a></li>
+          <li><a href="#" class="footer-link">Karir</a></li>
+          <li><a href="#" class="footer-link">Portfolio</a></li>
+        </ul>
+      </div>
+
+      <div class="col-md-3 mb-4">
+        <h5 class="fw-bold">Kontak</h5>
+        <ul class="list-unstyled small">
+          <li>Email: info@visidigital.com</li>
+          <li>Whatsapp: 08xxxxxx</li>
+        </ul>
+      </div>
+
+    </div>
+
+    <div class="text-center pt-3 mt-3 border-top border-secondary">
+      <p class="small mb-0">© 2025 VisiDigital. All Rights Reserved.</p>
+    </div>
+  </div>
+</footer>
+
+      <!-- Form -->
+<script src="dist/js/script.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
 </body>
+<script>
+  var swiper = new Swiper(".mySwiper", {
+    slidesPerView: 1,
+    spaceBetween: 20,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    breakpoints: {
+      576: {
+        slidesPerView: 2
+      },
+      768: {
+        slidesPerView: 3
+      },
+      992: {
+        slidesPerView: 4
+      }
+    }
+  });
+</script>
 </html>

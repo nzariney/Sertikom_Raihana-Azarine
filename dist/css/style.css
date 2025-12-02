@@ -83,6 +83,8 @@
     transition: 0.5s;
   }
 
+  
+
   .client {
     background-color: #0b1727;
    
@@ -196,3 +198,4 @@ margin-bottom: 100px;
   text-align: center;    /* jaga text tetap di tengah */
   
 }
+

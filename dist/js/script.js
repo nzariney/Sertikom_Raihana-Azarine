@@ -21,7 +21,7 @@ document.getElementById("contactForm").addEventListener("submit", function(e) {
     const errEmail = document.getElementById("err-email");
     const errPesan = document.getElementById("err-pesan");
 
-    // reset tampilan error
+    // et tampilan error
     [nama, email, pesan].forEach(el => el.style.border = "1px solid #1b2a41");
     [errNama, errEmail, errPesan].forEach(err => err.classList.add("d-none"));
 

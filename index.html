@@ -18,53 +18,59 @@
 <!-- aos -->
  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
-<body>
+<body class="body">
     <!-- navbar -->
-     <nav class="navbar navbar-expand-lg fixed-top navbar-dark" id="navbar">
-  <div class="container">
-   <img src="asset/img/lojo.png" width="9%">
+    <nav class="navbar navbar-expand-lg fixed-top navbar-dark" id="navbar">
+  <div class="container-fluid">
+    
+    <img src="asset/img/lojo.png" class="img-fluid" style="max-width: 90px;">
+
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
+
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
       <ul class="navbar-nav mx-auto mb-1 mb-lg-0">
         <li class="nav-item">
           <a class="nav-link active" aria-current="page" href="#">Beranda</a>
         </li>
+
         <li class="nav-item">
-          <a class="nav-link mx-1" href="#layanan kami">Layanan Kami</a>
+          <a class="nav-link mx-1" href="#layanan-kami">Layanan Kami</a>
         </li>
-        
-         <li class="nav-item">
-          <a class="nav-link mx-1" href="#tentang kami">Tentang Kami</a>
-         </li>
+
+        <li class="nav-item">
+          <a class="nav-link mx-1" href="#tentang-kami">Tentang Kami</a>
+        </li>
 
         <li class="nav-item">
           <a class="nav-link" href="#call">Hubungi Kami</a>
         </li>
-        
       </ul>
 
-    <div class="text-light fs-4">
-            <i class="fa-brands fa-facebook-f"></i>
-            <i class="fa-brands fa-whatsapp"></i>
-            <i class="fa-brands fa-instagram"></i>
+      <div class="text-light fs-4">
+        <i class="fa-brands fa-facebook-f"></i>
+        <i class="fa-brands fa-whatsapp mx-2"></i>
+        <i class="fa-brands fa-instagram"></i>
+      </div>
+
     </div>
-      
   </div>
 </nav>
+
    <!-- navbar -->
     <!-- hero -->
         <div class="hero d-flex align-items-center">
          <div data-aos="fade-up">
             <div class="container">
                   <div class="row row-cols-lg-2 row-cols-1 d-flex align-items-center mt-5">
-                      <div class="col  text-light flex-row mx-auto">
-                          <h1><b>Transformasi Digital dimulai dari VisiDigital.</b></h1>
+                      <div class="col  text-light flex-row mx-auto headline">
+                          <h1 class=""><b>Transformasi Digital dimulai dari VisiDigital.</b></h1>
                           <p class="my-4">“Membantu bisnis Anda tumbuh dengan layanan digital yang terstruktur, inovatif, dan dapat diandalkan”    </p>
-                              
-                          <button type="button" class="btn btn-primary btn-lg">Konsultasi Gratis</button>
-                          <a href="" class="btn-secondary glightbox"></a>
+                            
+                          <button type="button" class="btn btn-primary btn-lg " ><a href="#call" class="btn-secondary glightbox text-light button_konsul">Konsultasi Gratis</a></button>
+                          
 
                       </div>
                       
@@ -78,7 +84,7 @@
 <!-- ===== PAKET SECTION ===== -->
   <section id="paket" class="py-5" >
    <div data-aos="fade-up">
-    <div class="container" id="layanan kami">
+    <div class="container" id="layanan-kami">
       <div class="section-title">
         <h2>Layanan Kami</h2>
         <p>Pilih layanan untuk Kebutuhan Bisnis Anda</p>
@@ -184,7 +190,7 @@
 <!-- tentang kami -->
 <div class="judul_ttng" >
         <div class="row">
-          <div class="col mt-5 text-center text-light" id="tentang kami">
+          <div class="col mt-5 text-center text-light" id="tentang-kami">
              <h2><b>Tentang Kami</h2></b>
           </div>
         </div>
@@ -223,7 +229,7 @@
             <p>Digunakan dan Dipercaya Oleh Beberapa Perusahaan</p>
           </div>
        <div data-aos="fade-up">
-      <div class="row row-cols-1 row-cols-lg-4 d-flex ">   
+      <div class="row row-cols-1 row-cols-lg-4 row-cols-md-2">   
         <div class="col lg-3 md-6">
             <div class="card d-flex logo" >
             <img src="asset/img/industri1.jpg" class="card-img-top" alt="...">
@@ -232,7 +238,7 @@
             </div>
         </div> 
         </div>
-        <div class="col lg-3 md-6">
+        <div class="col cols-lg-3 cols-md-6">
             <div class="card d-flex logo">
             <img src="asset/img/industri2.jpg" class="card-img-top" alt="...">
             <div class="card-body">
@@ -279,7 +285,7 @@
               <!-- GAMBAR -->
               <div class="col-md-6 mb-4 mb-md-0 text-centerb">
                   <img src="asset/img/solutions.jpg"
-                       class="img-fluid rounded"
+                       class="img-fluid rounded image"
                        style="max-width: 100%; height: 100%; ">
               </div> 
               <div class="col-sm-6 justify-content-center align-items-center ">
@@ -305,7 +311,7 @@
                     <!-- PESAN -->
                     <div class="mb-3">
                         <label class="form-label text-light">Pesan</label>
-                        <textarea id="pesan" class="form-control" rows="4"
+                        <textarea id="pesan" class="form-control" rows="1"
                                   style="background:#0d1523; border:1px solid #1b2a41; color:white;"></textarea>
                         <small class="text-danger d-none" id="err-pesan">Pesan tidak boleh kosong</small>
                     </div>
@@ -367,7 +373,8 @@
   </div>
 </footer>
 <!-- footer -->
-      
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 <script src="dist/js/script.js"></script>
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>
